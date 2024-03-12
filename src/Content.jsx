@@ -4,6 +4,7 @@ import { Links } from "./components/Links.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { About } from "./components/About.jsx";
 import { Experience } from "./components/Experience.jsx";
+import { Contact } from "./components/Contact.jsx";
 
 export function Content() {
   return (
@@ -13,6 +14,7 @@ export function Content() {
       <Projects />
       <About />
       <Experience />
+      <Contact />
       <Footer />
     </div>
   )
