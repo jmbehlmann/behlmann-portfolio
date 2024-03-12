@@ -1,6 +1,7 @@
 export function Links() {
   return (
     <div>
+      <h2>Links</h2>
       <ul>
         <li>
           <a href="https://github.com/jmbehlmann" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)" title="GitHub">
