@@ -1,11 +1,9 @@
-import { Header } from "./components/Header.jsx";
-import { Footer } from "./components/Footer.jsx";
+import { Content } from "./Content.jsx";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Footer />
+      <Content />
     </div>
   )
 }
