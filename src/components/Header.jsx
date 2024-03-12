@@ -1,9 +1,9 @@
 export function Header() {
   return (
-    <header>
-      <nav>
-        <a href="#">Home</a> | <a href="#">Link</a>
-      </nav>
-    </header>
+    <div>
+     <h2>James Behlmann</h2>
+     <h4>Fullstack Software Developer</h4>
+     <p>I do some coding nonsense</p>
+    </div>
   )
 }
