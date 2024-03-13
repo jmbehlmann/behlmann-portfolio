@@ -1,5 +1,5 @@
 * {
-  background-color: #0f172a;
+  background-color: #0f172a !important;
   color: #e2e8f0;
 }
 
@@ -30,4 +30,8 @@ li {
 .svg:hover {
   fill: #FFB000;
   transition: fill .3s ease;
+}
+
+.card {
+  color: #e2e8f0;
 }
