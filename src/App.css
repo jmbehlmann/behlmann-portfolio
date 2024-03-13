@@ -21,3 +21,13 @@ li {
   transition: color 1s ease;
 }
 
+.svg:hover {
+  fill: #00FF66;
+  transition: fill 1s ease;
+
+}
+.svg {
+  fill: #e2e8f0;
+  transition: fill 1s ease;
+
+}
