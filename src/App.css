@@ -13,4 +13,11 @@ li {
 
 .link {
   color: #e2e8f0;
+  transition: color .4s ease;
 }
+.link:hover {
+  color: #00FF66;
+  /* color: rgb(94 234 212); */
+  transition: color 1s ease;
+}
+
