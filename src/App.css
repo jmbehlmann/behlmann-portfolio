@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(15 23 42);
+  background-color: #0f172a;
   color: #e2e8f0;
 }
 
@@ -13,21 +13,21 @@ li {
 
 .link {
   color: #e2e8f0;
-  transition: color .4s ease;
+  transition: color 1.6s ease;
 }
+
 .link:hover {
-  color: #00FF66;
-  /* color: rgb(94 234 212); */
-  transition: color 1s ease;
+  /* color: #00FF66; */
+  color: #FFB000;
+  transition: color .3s ease;
+}
+
+.svg {
+  fill: #e2e8f0;
+  transition: fill 1.6s ease;
 }
 
 .svg:hover {
-  fill: #00FF66;
-  transition: fill 1s ease;
-
-}
-.svg {
-  fill: #e2e8f0;
-  transition: fill 1s ease;
-
+  fill: #FFB000;
+  transition: fill .3s ease;
 }
