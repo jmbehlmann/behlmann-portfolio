@@ -4,7 +4,7 @@ export function Projects() {
       <h2>Projects</h2>
       <ul>
         <li>
-          <a href="https://jmbehlmann.github.io/bike-rack-chicago-frontend/" target="_blank">Bike Rack Chicago</a>
+          <a className="link" href="https://jmbehlmann.github.io/bike-rack-chicago-frontend/" target="_blank">Bike Rack Chicago</a>
         </li>
         <li>Portfolio site</li>
         <li>Rising Ash Designs</li>
