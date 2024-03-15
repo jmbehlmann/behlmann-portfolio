@@ -6,7 +6,7 @@ import { Projects } from "./components/Projects.jsx";
 import { About } from "./components/About.jsx";
 import { Experience } from "./components/Experience.jsx";
 import { Contact } from "./components/Contact.jsx";
-import { Scroll } from "./components/Scroll.jsx";
+import { Navbar } from "./components/Navbar.jsx";
 
 
 export function Content() {
@@ -50,7 +50,7 @@ export function Content() {
               <Header />
             </div>
             <div className="row p-2 h-50 border d-flex flex-column justify-content-center">
-              <Scroll currentSection={currentSection}/>
+              <Navbar currentSection={currentSection}/>
             </div>
             <div className="row h-25 p-2 border d-flex justify-content-center">
               <Links />

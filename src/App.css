@@ -22,6 +22,18 @@ li {
   transition: color .3s ease;
 }
 
+.navlink {
+  color: #e2e8f0;
+  transition: color 1.6s ease;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  /* color: #00FF66; */
+  color: #FFB000;
+  transition: color .3s ease;
+}
+
 .svg {
   fill: #e2e8f0;
   transition: fill 1.6s ease;
