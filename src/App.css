@@ -43,3 +43,8 @@ li {
   height: 100vh;
   overflow-y: auto;
 }
+
+.badge.badge-pill {
+  background-color: #2C394B !important;
+  color: #94a3b8;
+}

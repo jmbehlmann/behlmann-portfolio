@@ -25,12 +25,22 @@ export function Content() {
             </div>
           </div>
           <div className="col-lg-6 offset-lg-6 two p-5 border">
-            <div className="content-container border">
-              <Projects />
-              <About />
-              <Experience />
-              <Contact />
-              <Footer />
+            <div>
+              <div className="row border">
+                <Projects />
+              </div>
+              <div className="row border mt-5">
+                <About />
+              </div>
+              <div className="row border mt-5">
+                <Experience />
+              </div>
+              <div className="row border mt-5">
+                <Contact />
+              </div>
+              <div className="row border mt-5">
+                <Footer />
+              </div>
             </div>
           </div>
         </div>
