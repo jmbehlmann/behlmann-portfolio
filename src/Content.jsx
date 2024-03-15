@@ -12,12 +12,12 @@ export function Content() {
     <main>
       <div className="container-xxl">
         <div className="row px-2">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-2 fixed-top one">
             <Header />
             <Links />
-          </div>
-          <div className="col-lg-6">
-            <div className="content-container" style={{ height: "100vh", overflowY:"auto"}}>
+            </div>
+          <div className="col-lg-6 offset-lg-6 two">
+            <div className="content-container">
               <Projects />
               <About />
               <Experience />
