@@ -5,6 +5,7 @@ import { Projects } from "./components/Projects.jsx";
 import { About } from "./components/About.jsx";
 import { Experience } from "./components/Experience.jsx";
 import { Contact } from "./components/Contact.jsx";
+import { Scroll } from "./components/Scroll.jsx";
 
 
 export function Content() {
@@ -12,14 +13,14 @@ export function Content() {
     <main>
       <div className="container-xxl border">
         <div className="row p-2 border">
-          <div className="col-lg-4 h-100 position-fixed one p-5 border">
-            <div className="row p-2 border">
+          <div className="col-lg-4 position-fixed d-flex flex-column h-100 one p-5 border">
+            <div className="row p-2 border flex-grow-1">
               <Header />
             </div>
-            <div className="row p-2 border">
-              <p>scroll thing</p>
+            <div className="row p-2 border flex-grow-1 d-flex flex-column justify-content-center">
+              <Scroll/>
             </div>
-            <div className="row p-2 border">
+            <div className="row p-2 border flex-grow-1">
               <Links />
             </div>
           </div>
