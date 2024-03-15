@@ -13,11 +13,13 @@ export function Content() {
   const [currentSection, setCurrentSection] = useState("Projects");
 
   const handleScroll = () => {
-    const scrollPosition = window.scrollY;
+    const scrollPosition = window.scrollY + 48;
     // const projectsSection = document.getElementById("projectsSection").offsetTop;
     const aboutSection = document.getElementById("aboutSection").offsetTop;
     const experienceSection = document.getElementById("experienceSection").offsetTop;
     const contactSection = document.getElementById("contactSection").offsetTop;
+
+    // console.log(scrollPosition)
 
     if (scrollPosition < aboutSection) {
       setCurrentSection("Projects");
@@ -37,7 +39,7 @@ export function Content() {
     };
   }, []);
 
-  console.log(currentSection)
+  // console.log(currentSection)
 
   return (
     <main>
