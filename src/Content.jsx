@@ -10,14 +10,21 @@ import { Contact } from "./components/Contact.jsx";
 export function Content() {
   return (
     <main>
-      <div className="container-xxl">
-        <div className="row px-2">
-          <div className="col-lg-6 col-2 fixed-top one">
-            <Header />
-            <Links />
+      <div className="container-xxl border">
+        <div className="row p-2 border">
+          <div className="col-lg-4 h-100 position-fixed one p-5 border">
+            <div className="row p-2 border">
+              <Header />
             </div>
-          <div className="col-lg-6 offset-lg-6 two">
-            <div className="content-container">
+            <div className="row p-2 border">
+              <p>scroll thing</p>
+            </div>
+            <div className="row p-2 border">
+              <Links />
+            </div>
+          </div>
+          <div className="col-lg-6 offset-lg-6 two p-5 border">
+            <div className="content-container border">
               <Projects />
               <About />
               <Experience />
