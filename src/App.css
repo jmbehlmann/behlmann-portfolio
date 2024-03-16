@@ -17,7 +17,7 @@ li {
 }
 
 .link:hover {
-  /* color: #00FF66; */
+  /* color: #2CFA1F; */
   color: #FFB000;
   transition: color .3s ease;
 }
@@ -29,7 +29,7 @@ li {
 }
 
 .navlink:hover {
-  /* color: #00FF66; */
+  /* color: #2CFA1F; */
   color: #FFB000;
   transition: color .3s ease;
 }
@@ -41,6 +41,7 @@ li {
 
 .svg:hover {
   fill: #FFB000;
+  /* fill: #2CFA1F; */
   transition: fill .3s ease;
 }
 
