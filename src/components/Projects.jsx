@@ -50,6 +50,23 @@ export function Projects() {
           </div>
         </div>
         <div className="card border-secondary p-2">
+          <a className="link" href="#" target="_blank">Zyzz</a>
+          <div>
+            <p>Portfolio site summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id ante at quam tristique venenatis. Nunc laoreet quam sit amet odio convallis, id varius nisl condimentum. Donec aliquet nunc purus, vel congue quam</p>
+          </div>
+          <div className="row row-cols-auto g-2">
+            <div className="col">
+              <h5><span className="badge badge-pill">Bootstrap</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">React</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">Rails</span></h5>
+            </div>
+          </div>
+        </div>
+        <div className="card border-secondary p-2">
           <a className="link" href="https://www.risingashdesigns.com/" target="_blank">Rising Ash Designs</a>
         </div>
       </div>
