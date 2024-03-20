@@ -1,6 +1,6 @@
 export function Navbar({ currentSection }) {
   const developmentURL = "http://localhost:5173";
-  const productionURL = "https://adorable-flan-fc8e81.netlify.app";
+  const productionURL = "https://jamesbehlmann.netlify.app";
 
   const baseURL = process.env.NODE_ENV === "development" ? developmentURL : productionURL;
 

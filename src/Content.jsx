@@ -10,7 +10,7 @@ import { Navbar } from "./components/Navbar.jsx";
 
 
 export function Content() {
-  const [currentSection, setCurrentSection] = useState("Projects");
+  const [currentSection, setCurrentSection] = useState("About");
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + 48;
