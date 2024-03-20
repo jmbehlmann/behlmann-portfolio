@@ -14,12 +14,9 @@ export function Content() {
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + 48;
-    // const projectsSection = document.getElementById("projectsSection").offsetTop;
     const aboutSection = document.getElementById("aboutSection").offsetTop;
     const experienceSection = document.getElementById("experienceSection").offsetTop;
     const contactSection = document.getElementById("contactSection").offsetTop;
-
-    // console.log(scrollPosition)
 
     if (scrollPosition < aboutSection) {
       setCurrentSection("Projects");
@@ -39,13 +36,11 @@ export function Content() {
     };
   }, []);
 
-  // console.log(currentSection)
-
   return (
     <main>
       <div className="container-xxl border">
         <div className="row p-2 border">
-          <div className="col-lg-4 position-fixed d-flex flex-column h-100 one p-5 border">
+          <div className="col-lg-4 d-flex flex-column h-100 one p-5 border">
             <div className="row p-2 h-25 border d-flex flex-column justify-content-center">
               <Header />
             </div>

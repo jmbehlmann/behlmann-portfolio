@@ -66,3 +66,9 @@ li {
 .underline {
   text-decoration: underline;
 }
+
+@media (min-width: 992px) {
+  .one {
+    position: fixed;
+  }
+}
