@@ -72,3 +72,9 @@ li {
     position: fixed;
   }
 }
+
+@media (max-width: 992px) {
+  .navLinks h5 {
+    text-decoration: none;
+  }
+}

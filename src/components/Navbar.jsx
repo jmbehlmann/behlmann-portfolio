@@ -5,7 +5,7 @@ export function Navbar({ currentSection }) {
   const baseURL = process.env.NODE_ENV === "development" ? developmentURL : productionURL;
 
   return (
-    <div>
+    <div className="navLinks">
       <h5 className={currentSection === "Projects" ? "underline" : ""}>
         <a className="navlink" href={`${baseURL}/#projectsSection`}>Projects</a>
       </h5>
