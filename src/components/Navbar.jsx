@@ -6,17 +6,17 @@ export function Navbar({ currentSection }) {
 
   return (
     <div className="navLinks mb-5">
-      <h5 className={currentSection === "Projects" ? "highlight" : ""}>
-        <a className="navlink" href={`${baseURL}/#projectsSection`}>Projects</a>
+      <h5>
+        <a className={`navlink ${currentSection === "Projects" ? "highlight" : ""}`} href={`${baseURL}/#projectsSection`}>Projects</a>
       </h5>
-      <h5 className={currentSection === "About" ? "highlight" : ""}>
-        <a className="navlink" href={`${baseURL}/#aboutSection`}>About</a>
+      <h5>
+        <a className={`navlink ${currentSection === "About" ? "highlight" : ""}`} href={`${baseURL}/#aboutSection`}>About</a>
       </h5>
-      <h5 className={currentSection === "Experience" ? "highlight" : ""}>
-        <a className="navlink" href={`${baseURL}/#experienceSection`}>Experience</a>
+      <h5>
+        <a className={`navlink ${currentSection === "Experience" ? "highlight" : ""}`} href={`${baseURL}/#experienceSection`}>Experience</a>
       </h5>
-      <h5 className={currentSection === "Contact" ? "highlight" : ""}>
-        <a className="navlink" href={`${baseURL}/#contactSection`}>Contact</a>
+      <h5>
+        <a className={`navlink ${currentSection === "Contact" ? "highlight" : ""}`} href={`${baseURL}/#contactSection`}>Contact</a>
       </h5>
     </div>
   );
