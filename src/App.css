@@ -85,6 +85,16 @@ li {
   color: #94a3b8 !important;
 }
 
-.btn.btn-primary {
-  fill: white;
+.btn {
+  border-color: #dee2e6 !important;
+  color: #94a3b8 !important;
+  transition: color 1.6s ease, border-color 1.6s ease !important;
 }
+
+.btn:hover {
+  border-color: #FFB000 !important;
+  color: #FFB000 !important;
+  transition: color .3s ease, border-color .3s ease !important;
+}
+
+
