@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 * {
   background-color: #0f172a !important;
   color: #e2e8f0;
+  font-family: Sofia Sans;
 }
 
 @media (min-width: 992px) {
@@ -17,6 +20,7 @@
 
 p {
   color: #94a3b8;
+  font-family: sans-serif;
 }
 
 li {
