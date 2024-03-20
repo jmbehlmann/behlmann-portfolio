@@ -3,6 +3,18 @@
   color: #e2e8f0;
 }
 
+@media (min-width: 992px) {
+  .one {
+    position: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  .navLinks h5 {
+    text-decoration: none;
+  }
+}
+
 p {
   color: #94a3b8;
 }
@@ -35,8 +47,8 @@ li {
 }
 
 .svg {
-  fill: #e2e8f0;
-  /* fill: #94a3b8; */
+  /* fill: #e2e8f0; */
+  fill: #94a3b8;
   transition: fill 1.6s ease;
 }
 
@@ -44,18 +56,6 @@ li {
   fill: #FFB000;
   /* fill: #2CFA1F; */
   transition: fill .3s ease;
-}
-
-.card {
-  color: #e2e8f0;
-}
-
-.sticky-sidebar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
 }
 
 .badge.badge-pill {
@@ -67,14 +67,3 @@ li {
   text-decoration: underline;
 }
 
-@media (min-width: 992px) {
-  .one {
-    position: fixed;
-  }
-}
-
-@media (max-width: 992px) {
-  .navLinks h5 {
-    text-decoration: none;
-  }
-}

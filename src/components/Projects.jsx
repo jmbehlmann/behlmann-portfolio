@@ -50,7 +50,7 @@ export function Projects() {
           </div>
         </div>
         <div className="card border-secondary p-2">
-          <a className="link" href="#" target="_blank">Zyzz</a>
+          <a className="link" href="https://github.com/jmbehlmann/zizz-frontend-2" target="_blank">Zyzz</a>
           <div>
             <p>Portfolio site summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id ante at quam tristique venenatis. Nunc laoreet quam sit amet odio convallis, id varius nisl condimentum. Donec aliquet nunc purus, vel congue quam</p>
           </div>

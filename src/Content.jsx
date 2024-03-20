@@ -44,7 +44,7 @@ export function Content() {
             <div className="row p-2 h-25 border d-flex flex-column justify-content-center">
               <Header />
             </div>
-            <div className="row p-2 h-50 border d-flex flex-column justify-content-center">
+            <div className="row p-2  h-50 border d-flex flex-column justify-content-center">
               <Navbar currentSection={currentSection}/>
             </div>
             <div className="row h-25 p-2 border d-flex justify-content-center">
