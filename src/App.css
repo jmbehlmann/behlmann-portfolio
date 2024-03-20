@@ -35,7 +35,7 @@ li {
 }
 
 .navlink {
-  color: #e2e8f0;
+  color: #94a3b8;
   transition: color 1.6s ease;
   text-decoration: none;
 }
@@ -63,7 +63,13 @@ li {
   color: #94a3b8;
 }
 
-.underline {
+.highlight {
   text-decoration: underline;
+  color: #e2e8f0;
 }
+
+.custom-container {
+  max-width: 1200px !important;
+}
+
 

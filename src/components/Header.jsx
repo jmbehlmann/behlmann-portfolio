@@ -1,8 +1,8 @@
 export function Header() {
   return (
     <div>
-     <h2>James Behlmann</h2>
-     <h4>Fullstack Software Developer</h4>
+     <h1>James Behlmann</h1>
+     <h5>Fullstack Software Developer</h5>
      <p>I do some coding nonsense</p>
     </div>
   )

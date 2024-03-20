@@ -6,16 +6,16 @@ export function Navbar({ currentSection }) {
 
   return (
     <div className="navLinks mb-5">
-      <h5 className={currentSection === "Projects" ? "underline" : ""}>
+      <h5 className={currentSection === "Projects" ? "highlight" : ""}>
         <a className="navlink" href={`${baseURL}/#projectsSection`}>Projects</a>
       </h5>
-      <h5 className={currentSection === "About" ? "underline" : ""}>
+      <h5 className={currentSection === "About" ? "highlight" : ""}>
         <a className="navlink" href={`${baseURL}/#aboutSection`}>About</a>
       </h5>
-      <h5 className={currentSection === "Experience" ? "underline" : ""}>
+      <h5 className={currentSection === "Experience" ? "highlight" : ""}>
         <a className="navlink" href={`${baseURL}/#experienceSection`}>Experience</a>
       </h5>
-      <h5 className={currentSection === "Contact" ? "underline" : ""}>
+      <h5 className={currentSection === "Contact" ? "highlight" : ""}>
         <a className="navlink" href={`${baseURL}/#contactSection`}>Contact</a>
       </h5>
     </div>

@@ -38,9 +38,9 @@ export function Content() {
 
   return (
     <main>
-      <div className="container-xxl border">
+      <div className="container custom-container">
         <div className="row p-2 border">
-          <div className="col-lg-5 d-flex flex-column h-100 one p-5 border">
+          <div className="col-4 h-100 one p-5 border">
             <div className="row p-2 h-25 border d-flex flex-column justify-content-center">
               <Header />
             </div>
@@ -51,7 +51,7 @@ export function Content() {
               <Links />
             </div>
           </div>
-          <div className="col-lg-6 offset-lg-6 two p-5 border">
+          <div className="col-6 offset-6 two p-5 border">
             <div>
               <div className="row border" id="projectsSection">
                 <Projects />
