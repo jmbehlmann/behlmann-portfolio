@@ -14,14 +14,15 @@ export function Content() {
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + 48;
-    const aboutSection = document.getElementById("aboutSection").offsetTop;
+    // const aboutSection = document.getElementById("aboutSection").offsetTop;
+    const projectsSection = document.getElementById("projectsSection").offsetTop;
     const experienceSection = document.getElementById("experienceSection").offsetTop;
     const contactSection = document.getElementById("contactSection").offsetTop;
 
-    if (scrollPosition < aboutSection) {
-      setCurrentSection("Projects");
-    } else if (scrollPosition < experienceSection) {
+    if (scrollPosition < projectsSection) {
       setCurrentSection("About");
+    } else if (scrollPosition < experienceSection) {
+      setCurrentSection("Projects");
     } else if (scrollPosition < contactSection) {
       setCurrentSection("Experience");
     } else {
@@ -53,11 +54,11 @@ export function Content() {
           </div>
           <div className="col-lg-6 offset-lg-6 two p-5 border">
             <div>
-              <div className="row border" id="projectsSection">
-                <Projects />
-              </div>
-              <div className="row border mt-5" id="aboutSection">
+              <div className="row border" id="aboutSection">
                 <About />
+              </div>
+              <div className="row border mt-5" id="projectsSection">
+                <Projects />
               </div>
               <div className="row border mt-5" id="experienceSection">
                 <Experience />
