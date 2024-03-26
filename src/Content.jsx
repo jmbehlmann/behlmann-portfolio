@@ -41,7 +41,7 @@ export function Content() {
     <main>
       <div className="container-xxl custom-container">
         <div className="row p-2 border">
-          <div className="col-lg-4 h-100 one p-5 border">
+          <div className="col-lg-5 h-100 one p-5 border">
             <div className="row p-2 h-25 border d-flex flex-column justify-content-center">
               <Header />
             </div>
