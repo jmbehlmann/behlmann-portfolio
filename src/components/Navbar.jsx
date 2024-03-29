@@ -12,9 +12,9 @@ export function Navbar({ currentSection }) {
       </h5>
         <a className={`navlink ${currentSection === "Projects" ? "highlight" : ""}`} href={`${baseURL}/#projectsSection`}>Projects</a>
       </h5>
-      <h5>
+      {/* <h5>
         <a className={`navlink ${currentSection === "Experience" ? "highlight" : ""}`} href={`${baseURL}/#experienceSection`}>Experience</a>
-      </h5>
+      </h5> */}
       <h5>
         <a className={`navlink ${currentSection === "Contact" ? "highlight" : ""}`} href={`${baseURL}/#contactSection`}>Contact</a>
       </h5>

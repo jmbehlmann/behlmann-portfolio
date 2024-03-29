@@ -16,7 +16,7 @@ export function Content() {
     const scrollPosition = window.scrollY + 48;
     // const aboutSection = document.getElementById("aboutSection").offsetTop;
     const projectsSection = document.getElementById("projectsSection").offsetTop;
-    const experienceSection = document.getElementById("experienceSection").offsetTop;
+    // const experienceSection = document.getElementById("experienceSection").offsetTop;
     const contactSection = document.getElementById("contactSection").offsetTop;
 
     if (scrollPosition < projectsSection) {
@@ -24,7 +24,7 @@ export function Content() {
     } else if (scrollPosition < experienceSection) {
       setCurrentSection("Projects");
     } else if (scrollPosition < contactSection) {
-      setCurrentSection("Experience");
+      setCurrentSection("Projects");
     } else {
       setCurrentSection("Contact");
     }
@@ -60,9 +60,9 @@ export function Content() {
               <div className="row border mt-5" id="projectsSection">
                 <Projects />
               </div>
-              <div className="row border mt-5" id="experienceSection">
+              {/* <div className="row border mt-5" id="experienceSection">
                 <Experience />
-              </div>
+              </div> */}
               <div className="row border mt-5" id="contactSection">
                 <Contact />
               </div>
