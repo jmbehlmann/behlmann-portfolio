@@ -1,9 +1,6 @@
 import { useForm } from 'react-hook-form';
 
 export function Contact() {
-
-  console.log(import.meta.env.EMAIL_JS_SERVICE_ID)
-
   const {
     register,
     handleSubmit,
