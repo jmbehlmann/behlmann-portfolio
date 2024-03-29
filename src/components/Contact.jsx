@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
@@ -9,9 +10,28 @@ export function Contact() {
     formState: { errors }
   } = useForm();
 
+  const [disabled, setDisabled] = useState(false);
+  const [alertInfo, setAlertInfo] = useState({
+    display: false,
+    message: '',
+    type: '',
+  });
+
+
+  // Shows alert message for form submission feedback
+  const toggleAlert = (message, type) => {
+    setAlertInfo({ display: true, message, type });
+
+    // Hide alert after 5 seconds
+    setTimeout(() => {
+      setAlertInfo({ display: false, message: '', type: '' });
+    }, 5000);
+  };
+
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
     try {
+      setDisabled(true);
       const templateParams = {
         name,
         email,
@@ -24,9 +44,17 @@ export function Contact() {
         templateParams,
         import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
       );
-      reset();
+     // Display success alert
+    toggleAlert('Message Sent!', 'success');
     } catch (e) {
-      console.log(e);
+      console.error(e);
+      // Display error alert
+      toggleAlert('Uh oh. Something went wrong.', 'danger');
+    } finally {
+      // Re-enable form submission
+      setDisabled(false);
+      // Reset contact form fields after submission
+      reset();
     }
   };
 
@@ -114,8 +142,12 @@ export function Contact() {
                   </div>
                   <div className='row py-2 formRow'>
                     <div className='col text-left'>
-                      <button className='btn btn-primary' type='submit'>
-                        Submit
+                      <button
+                        className='btn btn-primary'
+                        type='submit'
+                        disabled={disabled}
+                      >
+                        {disabled ? 'Submitting...' : 'Submit'}
                       </button>
                     </div>
                   </div>
@@ -125,6 +157,23 @@ export function Contact() {
           </div>
         </div>
       </div>
+        {alertInfo.display && (
+          <div
+            className={`alert alert-${alertInfo.type} alert-dismissible mt-2 mx-2`}
+            role='alert'
+          >
+            {alertInfo.message}
+            <button
+              type='button'
+              className='btn btn-close'
+              data-bs-dismiss='alert'
+              aria-label='Close'
+              onClick={() =>
+                setAlertInfo({ display: false, message: '', type: '' })
+              } // Clear the alert when close button is clicked
+            ></button>
+          </div>
+        )}
     </div>
-  )
-}
+  );
+};
