@@ -111,7 +111,11 @@ li {
   cursor: pointer;
 }
 
-.orch-pic:hover:after {
+.orch-pic:hover .orch-pic-img:after {
+  opacity: 1;
+}
+
+.orch-pic-img:after {
   content: '';
   position: absolute;
   background-image: url(/orch_pic.jpeg);
@@ -119,11 +123,11 @@ li {
   background-size: contain;
   left: 100%;
   top: 0;
-  width: 300px;  /* These are just large enough to definitely   */
-  height: 500px; /* contain the image. Image could be any size. */
-  opacity: 1;
+  width: 300px;
+  height: 500px;
+  opacity: 0; /* Initial opacity set to 0 */
   z-index: 999;
-  transition: opacity 2.0s !important;
+  transition: opacity .6s; /* Transition opacity over 2 seconds */
 }
 
 .mtn-pic {
@@ -131,7 +135,11 @@ li {
   cursor: pointer;
 }
 
-.mtn-pic:hover:after {
+.mtn-pic:hover .mtn-pic-img:after {
+  opacity: 1;
+}
+
+.mtn-pic-img:after {
   content: '';
   position: absolute;
   background-image: url(/IMG_0355.jpeg);
@@ -139,11 +147,10 @@ li {
   background-size: contain;
   left: 100%;
   top: 0;
-  width: 300px;  /* These are just large enough to definitely   */
-  height: 500px; /* contain the image. Image could be any size. */
-  opacity: 1;
+  width: 300px;
+  height: 500px;
+  opacity: 0; /* Initial opacity set to 0 */
   z-index: 999;
-  transition: opacity 2.0s !important;
+  transition: opacity .6s; /* Transition opacity over 2 seconds */
 }
-
 
