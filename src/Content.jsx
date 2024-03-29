@@ -21,8 +21,8 @@ export function Content() {
 
     if (scrollPosition < projectsSection) {
       setCurrentSection("About");
-    } else if (scrollPosition < experienceSection) {
-      setCurrentSection("Projects");
+    // } else if (scrollPosition < experienceSection) {
+    //   setCurrentSection("Projects");
     } else if (scrollPosition < contactSection) {
       setCurrentSection("Projects");
     } else {
