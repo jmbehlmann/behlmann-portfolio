@@ -120,7 +120,7 @@ li {
   left: 100%;
   top: 0;
   width: 300px;
-  height: 500px;
+  height: 400px;
   opacity: 1;
   z-index: 999;
   transition: opacity 2.0s !important;
@@ -139,6 +139,30 @@ li {
   content: '';
   position: absolute;
   background-image: url(/IMG_0355.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 100%;
+  top: 0;
+  width: 300px;
+  height: 500px;
+  opacity: 1;
+  z-index: 999;
+  transition: opacity 2.0s !important;
+}
+
+.cat-pic {
+  position: relative;
+  cursor: pointer;
+}
+
+.cat-pic:hover + .cat-pic-img:after {
+  opacity: 1;
+}
+
+.cat-pic:hover:after {
+  content: '';
+  position: absolute;
+  background-image: url(/cat_pic.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   left: 100%;
