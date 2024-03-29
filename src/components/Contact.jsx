@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
   const {
@@ -18,10 +19,10 @@ export function Contact() {
         message
       };
       await emailjs.send(
-        import.meta.env.EMAIL_JS_SERVICE_ID,
-        import.meta.env.EMAIL_JS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
         templateParams,
-        import.meta.env.EMAIL_JS_PUBLIC_KEY
+        import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
       );
       reset();
     } catch (e) {
