@@ -35,7 +35,7 @@ export function Projects() {
         <div className="card border-secondary p-2">
           <a className="link" href="#" target="_blank">Portfolio Site</a>
           <div>
-            <p>Portfolio site summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id ante at quam tristique venenatis. Nunc laoreet quam sit amet odio convallis, id varius nisl condimentum. Donec aliquet nunc purus, vel congue quam</p>
+            <p>This is the site you're on right now! It's built using React for dynamic user interaction and Bootstrap for clean, responsive design. It's deployed on Netlify so that it's easily accessible. Integration with emailjs allows visitors to contact me directly. It offers a simple yet effective platform shows my design preference for simple and obvious websites.</p>
           </div>
           <div className="row row-cols-auto g-2">
             <div className="col">
@@ -46,6 +46,9 @@ export function Projects() {
             </div>
             <div className="col">
               <h5><span className="badge badge-pill">Netlify</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">EmailJS</span></h5>
             </div>
           </div>
         </div>
