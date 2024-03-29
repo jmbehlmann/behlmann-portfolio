@@ -66,9 +66,6 @@ export function Projects() {
             </div>
           </div>
         </div>
-        <div className="card border-secondary p-2">
-          <a className="link" href="https://www.risingashdesigns.com/" target="_blank">Rising Ash Designs</a>
-        </div>
       </div>
     </div>
   )
