@@ -39,16 +39,16 @@ export function Projects() {
           </div>
           <div className="row row-cols-auto g-2">
             <div className="col">
-              <h5><span className="badge badge-pill">Bootstrap</span></h5>
-            </div>
-            <div className="col">
               <h5><span className="badge badge-pill">React</span></h5>
             </div>
             <div className="col">
-              <h5><span className="badge badge-pill">Netlify</span></h5>
+              <h5><span className="badge badge-pill">Bootstrap</span></h5>
             </div>
             <div className="col">
               <h5><span className="badge badge-pill">EmailJS</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">Netlify</span></h5>
             </div>
           </div>
         </div>
