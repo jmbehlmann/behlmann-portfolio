@@ -2,6 +2,8 @@ import { useForm } from 'react-hook-form';
 
 export function Contact() {
 
+  console.log(import.meta.env.EMAIL_JS_SERVICE_ID)
+
   const {
     register,
     handleSubmit,
@@ -19,10 +21,10 @@ export function Contact() {
         message
       };
       await emailjs.send(
-        process.env.EMAIL_JS_SERVICE_ID,
-        process.env.EMAIL_JS_TEMPLATE_ID,
+        import.meta.env.EMAIL_JS_SERVICE_ID,
+        import.meta.env.EMAIL_JS_TEMPLATE_ID,
         templateParams,
-        process.env.EMAIL_JS_PUBLIC_KEY
+        import.meta.env.EMAIL_JS_PUBLIC_KEY
       );
       reset();
     } catch (e) {
