@@ -105,3 +105,20 @@ li {
 .alert-success {
   color: #2CFA1F !important;
 }
+
+.pic {
+  position: relative;
+  cursor: pointer;
+}
+
+.pic:hover:after {
+  content: '';
+  position: absolute;
+  background-image: url(/orch_pic.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 100%;
+  top: 0;
+  width: 300px;  /* These are just large enough to definitely   */
+  height: 500px; /* contain the image. Image could be any size. */
+}
