@@ -11,11 +11,23 @@ export function Contact() {
 
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
-
-    console.log('Name: ', name);
-    console.log('Email: ', email);
-    console.log('Subject: ', subject);
-    console.log('Message: ', message);
+    try {
+      const templateParams = {
+        name,
+        email,
+        subject,
+        message
+      };
+      await emailjs.send(
+        process.env.EMAIL_JS_SERVICE_ID,
+        process.env.EMAIL_JS_TEMPLATE_ID,
+        templateParams,
+        process.env.EMAIL_JS_PUBLIC_KEY
+      );
+      reset();
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
