@@ -3,6 +3,9 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
 export function Contact() {
+  const serviceId = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
 
   const {
     register,
@@ -39,10 +42,10 @@ export function Contact() {
         message
       };
       await emailjs.send(
-        import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
-        import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         templateParams,
-        import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
+        publicKey
       );
     toggleAlert('Message Sent!', 'success');
     } catch (e) {
