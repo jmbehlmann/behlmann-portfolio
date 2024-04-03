@@ -7,9 +7,6 @@ export function Contact() {
   const templateId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
 
-  const testKey = import.meta.env.VITE_TEST_KEY
-  console.log(testKey)
-
   const {
     register,
     handleSubmit,
