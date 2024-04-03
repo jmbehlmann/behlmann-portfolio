@@ -5,7 +5,9 @@ import emailjs from '@emailjs/browser';
 export function Contact() {
   const serviceId = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
+  const publicKey = import.meta.env.EMAIL_JS_PUBLIC_KEY;
+
+  console.log(publicKey)
 
   const {
     register,
