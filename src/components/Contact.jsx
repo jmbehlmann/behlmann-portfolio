@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
 export function Contact() {
+
   const {
     register,
     handleSubmit,
@@ -22,7 +23,6 @@ export function Contact() {
   const toggleAlert = (message, type) => {
     setAlertInfo({ display: true, message, type });
 
-    // Hide alert after 5 seconds
     setTimeout(() => {
       setAlertInfo({ display: false, message: '', type: '' });
     }, 5000);
@@ -44,16 +44,12 @@ export function Contact() {
         templateParams,
         import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
       );
-     // Display success alert
     toggleAlert('Message Sent!', 'success');
     } catch (e) {
       console.error(e);
-      // Display error alert
       toggleAlert('Uh oh. Something went wrong.', 'danger');
     } finally {
-      // Re-enable form submission
       setDisabled(false);
-      // Reset contact form fields after submission
       reset();
     }
   };
@@ -170,7 +166,7 @@ export function Contact() {
               aria-label='Close'
               onClick={() =>
                 setAlertInfo({ display: false, message: '', type: '' })
-              } // Clear the alert when close button is clicked
+              }
             ></button>
           </div>
         )}
