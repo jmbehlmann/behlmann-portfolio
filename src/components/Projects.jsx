@@ -12,7 +12,7 @@ export function Projects() {
             Threadlistify
           </a>
           <div>
-            <p>Threadlistify is a Python application that uses various APIs to retrieve data from Reddit threads, analyze comments with OpenAI, and interact with the Spotify API to create playlists based on albums mentioned in the thread.</p>
+            <p>Threadlistify is a Python application that uses the Python Reddit API Wrapper to retrieve data from Reddit threads, analyzes comments with OpenAI, and interacts with the Spotify API to create playlists based on albums mentioned in the thread.</p>
           </div>
           <div className="row row-cols-auto g-2">
             <div className="col">
@@ -20,6 +20,9 @@ export function Projects() {
             </div>
             <div className="col">
               <h5><span className="badge badge-pill">Reddit API</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">PRAW</span></h5>
             </div>
             <div className="col">
               <h5><span className="badge badge-pill">OpenAI API</span></h5>
