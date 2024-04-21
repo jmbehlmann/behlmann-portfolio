@@ -6,6 +6,32 @@ export function Projects() {
         <div className="card border-secondary p-2">
           <a
             className="link"
+            href="https://github.com/jmbehlmann/threadlistify"
+            target="_blank"
+          >
+            Threadlistify
+          </a>
+          <div>
+            <p>Threadlistify is a Python application that uses various APIs to retrieve data from Reddit threads, analyze comments with OpenAI, and interact with the Spotify API to create playlists based on albums mentioned in the thread.</p>
+          </div>
+          <div className="row row-cols-auto g-2">
+            <div className="col">
+              <h5><span className="badge badge-pill">Python</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">Reddit API</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">OpenAI API</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">Spotify API</span></h5>
+            </div>
+          </div>
+        </div>
+        <div className="card border-secondary p-2">
+          <a
+            className="link"
             href="https://jmbehlmann.github.io/bike-rack-chicago-frontend/"
             target="_blank"
           >
@@ -22,7 +48,7 @@ export function Projects() {
               <h5><span className="badge badge-pill">Rails</span></h5>
             </div>
             <div className="col">
-              <h5><span className="badge badge-pill">Google Apis</span></h5>
+              <h5><span className="badge badge-pill">Google APIs</span></h5>
             </div>
             <div className="col">
               <h5><span className="badge badge-pill">PostgreSQL</span></h5>
