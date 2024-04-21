@@ -62,7 +62,7 @@ export function Projects() {
           </div>
         </div>
         <div className="card border-secondary p-2">
-          <a className="link" href="#" target="_blank">Portfolio Site</a>
+          <a className="link" href="https://jamesbehlmann.netlify.app/" target="_blank">Portfolio Site</a>
           <div>
             <p>This is the site you're on right now! It's built using React for dynamic user interaction and Bootstrap for a clean and responsive design. It's deployed on Netlify so that it's easily accessible. Integration with emailjs allows visitors to contact me directly. There's also some fun css throughout the site. It offers a simple yet effective platform which shows my design preference for simple and easy to use websites.</p>
           </div>
