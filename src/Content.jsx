@@ -39,6 +39,7 @@ export function Content() {
 
   return (
     <main>
+      <div className="wave-background"></div>
       <div className="container-xxl custom-container">
         <div className="row p-2 ">
           <div className="col-lg-5 h-100 one p-5 ">
