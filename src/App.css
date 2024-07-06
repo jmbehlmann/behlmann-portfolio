@@ -28,8 +28,8 @@ body {
         rgba(18,27,48,1) 50%,
         rgba(15,23,42,1) 75%,
         rgba(15,23,42,1) 100%);
-    background-size: 200% 200%;
-    animation: waveAnimation 20s ease infinite;
+    background-size: 300% 300%;
+    animation: waveAnimation 40s ease infinite;
     z-index: -1;
 }
 
