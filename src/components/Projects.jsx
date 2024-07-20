@@ -6,6 +6,32 @@ export function Projects() {
         <div className="card border-secondary p-2">
           <a
             className="link"
+            href="https://github.com/jmbehlmann/budget-track"
+            target="_blank"
+          >
+            Budget Tracker
+          </a>
+          <div>
+            <p>Budget Tracker is a simple Flask application used to track monthly budgets and expenses. It provides CRUD actions for transactions and budgets and displays data using Chart.js.</p>
+          </div>
+          <div className="row row-cols-auto g-2">
+            <div className="col">
+              <h5><span className="badge badge-pill">Python</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">Flask</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">SQLAlchemy</span></h5>
+            </div>
+            <div className="col">
+              <h5><span className="badge badge-pill">Chart.js</span></h5>
+            </div>
+          </div>
+        </div>
+        <div className="card border-secondary p-2">
+          <a
+            className="link"
             href="https://github.com/jmbehlmann/threadlistify"
             target="_blank"
           >
