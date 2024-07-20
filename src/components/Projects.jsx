@@ -12,7 +12,7 @@ export function Projects() {
             Budget Tracker
           </a>
           <div>
-            <p>Budget Tracker is a simple Flask application used to track monthly budgets and expenses. It provides CRUD actions for transactions and budgets and displays data using Chart.js.</p>
+            <p>Budget Tracker is a simple Flask application used to create budgets and track expenses on a monthly basis. It provides CRUD actions for transactions and budgets and displays data using Chart.js.</p>
           </div>
           <div className="row row-cols-auto g-2">
             <div className="col">
